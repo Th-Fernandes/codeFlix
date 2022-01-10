@@ -1,0 +1,42 @@
+$red: #EC111A;
+$neutral-white: #F9F9F9;
+$neutral-dark: #1D1D1D;
+$dark-container: rgba($color: $neutral-dark, $alpha: 0.5);
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: 'Sora', sans-serif;
+  color: $neutral-white;
+}
+
+
+html {
+  font-size: 62.5%;
+
+  body {
+    width: 100%;
+    height: 100vh;
+    //global buttons settings
+    button {
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      color: $neutral-white;
+    }
+    //global lists settings
+    ul, ol {
+      list-style-type: none;
+    }
+    //GLOBAL LINK SETTINGS
+    a {
+      text-decoration: none;
+      color: $neutral-white
+    }
+  }
+}

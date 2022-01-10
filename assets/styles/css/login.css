@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Sora", sans-serif;
+  color: #F9F9F9;
+}
+
+html {
+  font-size: 62.5%;
+}
+html body {
+  width: 100%;
+  height: 100vh;
+}
+html body button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #F9F9F9;
+}
+html body ul, html body ol {
+  list-style-type: none;
+}
+html body a {
+  text-decoration: none;
+  color: #F9F9F9;
+}
+
+/*# sourceMappingURL=login.css.map */
