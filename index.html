@@ -8,6 +8,7 @@
   <link rel = "shortcut icon" type = "imagem/x-icon" href = "./assets/images/spiderman-logo.svg"/>
   <!--CSS-->
   <link rel="stylesheet" href="./assets/styles/css/global.css">
+  <link rel="stylesheet" href="./assets/styles/css/login.css">
   <link rel="stylesheet" href="./assets/styles/css/index.css">
   <!--FONTS-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -75,6 +76,10 @@
               <a href="#"> ELENCO </a>
             </li>
           </ul>
+
+          <button id="mobileMenu">
+            <img src="./assets/images/mobile/mobile-menu.svg" alt="menu">
+          </button>
         </nav>
       </header>
 
@@ -90,7 +95,29 @@
       </main>
   </section>
   
+  <section id="loginContainer">
+    <form action="" id="loginInfo">
+      <h2>ENTRAR</h2>
 
+      <div class="user-login-info">
+        <label for="userMail">Email</label>
+        <input type="email" name="userMail" id="userMail" placeholder="seu Email" />
+
+        <label for="userPassword">senha</label>
+        <input type="password" name="pass" id="userPassword" placeholder="senha">
+
+        <button id="login"> Entrar </button>
+      </div>
+
+      <h2 class='titulo-criar-conta'>Não possui conta?</h2>
+
+      <p>
+        Você pode criar uma conta clicando <a href="#">aqui.</a>
+      </p>
+    </form>
+  </section>
+
+  <script src="./main.js" type="module"></script>
 
 </body>
 </html>

@@ -1,11 +1,16 @@
 @import "./global.scss";
+@mixin hide {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
 
 body {
+  width: 100%;
   height: 100%;
-    display: flex;
-    background: url(../../images/spiderman-thumb.svg) no-repeat  center;
-    object-fit: scale-up;
-    background-size: cover;
+  display: flex;
+  background: url(../../images/spiderman-thumb.svg) no-repeat  center;
+  background-size: cover;
 
     section#menu {
       min-width: 10rem;
@@ -53,7 +58,6 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        //margin: 0 25.3rem 0 15.2rem;
         padding: 2.2rem 0;
         background-color: $dark-container;
 
@@ -74,6 +78,10 @@ body {
               }
             }
           }
+
+          #mobileMenu{
+            @include hide
+          }
         }
       }
 
@@ -87,13 +95,15 @@ body {
         #spidermanMilesMorales {
           > img {
             display: block;
+            width: min(57rem, 80%);
+            margin: auto;
           }
           
           #watchTrailer {
             display: flex;
             align-items: center;
             justify-content: center;
-            width: min(35rem, 90%);
+            width: min(35rem, 70%);
             height: 7rem;
             background-color: $neutral-dark;
             border: 2px solid $red;
@@ -109,4 +119,46 @@ body {
         }
       }
     }
+}
+
+
+@media(max-width: 768px) {
+  body {
+    display: block;
+
+    section#menu {
+      @include hide
+    }
+
+    section#mainContent {
+      height: 100vh;
+      #mainHeader {
+        #index {
+          margin: 0;
+          margin-left: 5rem;
+        }
+
+        > nav {
+          margin: 0;
+
+          #navLinks {
+            @include hide
+          }
+
+          #mobileMenu {
+            display: block;
+            visibility: inherit;
+            opacity: 1;
+
+            > img {
+              width: 4rem;
+              margin-right: 5rem;
+            }
+          }
+        }
+      }
+
+      
+    }
+  }
 }

@@ -1,0 +1,26 @@
+{
+  "name": "codeflix",
+  "version": "0.2.0",
+  "description": "",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Th-Fernandes/codeFlix.git"
+  },
+  "keywords": [
+    "js",
+    "html",
+    "scss",
+    "css"
+  ],
+  "author": "Thiago Fernandes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Th-Fernandes/codeFlix/issues"
+  },
+  "homepage": "https://github.com/Th-Fernandes/codeFlix#readme"
+}
