@@ -1,0 +1,46 @@
+@import './global.scss';
+
+body {
+  section#perfisSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 4rem;
+    position: fixed;
+    inset: 0;
+    z-index: 4;
+    width: 100%;
+    height: 100vh;
+    user-select: none;
+    background-color: $neutral-dark;
+    
+    #profilesContainer {
+      > h2 {
+        margin-block: 2.8rem;
+      }
+
+      #profiles {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .profile {
+          > img {
+            width: 15rem;
+            height: 15rem;
+          }
+          
+          #addButton {
+            background: radial-gradient(circle, rgba(255,209,0,1) 0%, rgba(255,105,5,1) 100%);
+          }
+
+          > p {
+            font-size: 1.4rem;
+            color: rgba($color: $neutral-white, $alpha: 0.5)
+          }
+        }
+      }
+    }
+  }
+}

@@ -49,7 +49,8 @@ body section#loginContainer {
   z-index: 5;
   width: 100%;
   height: 100vh;
-  background: url(../../images/login-bg.png) white;
+  background: url(../../images/login-bg.png) center no-repeat;
+  background-size: cover;
   filter: invert(5%);
   user-select: none;
 }
@@ -100,6 +101,21 @@ body section#loginContainer #loginInfo .user-login-info::after {
   background-color: #F9F9F9;
   display: block;
   margin-top: 2rem;
+}
+body section#loginContainer #loginInfo .user-login-info #loginError {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+body section#loginContainer #loginInfo .user-login-info #loginError.active {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  visibility: visible;
+  opacity: 1;
+}
+body section#loginContainer #loginInfo .user-login-info #loginError > img {
+  margin-right: 0.5rem;
 }
 body section#loginContainer #loginInfo #login {
   width: 100%;

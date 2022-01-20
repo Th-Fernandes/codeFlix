@@ -1,123 +1,103 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SpiderMan - Codelandia</title>
-  <link rel = "shortcut icon" type = "imagem/x-icon" href = "./assets/images/spiderman-logo.svg"/>
+  <title>CodeFlix</title>
+  <link rel="shortcut icon" type="imagem/x-icon" href="./assets/images/spiderman-logo.svg" />
   <!--CSS-->
   <link rel="stylesheet" href="./assets/styles/css/global.css">
   <link rel="stylesheet" href="./assets/styles/css/login.css">
+  <link rel="stylesheet" href="./assets/styles/css/profiles.css">
   <link rel="stylesheet" href="./assets/styles/css/index.css">
   <!--FONTS-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600&display=swap" rel="stylesheet">
 </head>
-<body>
-  
-  
-  <section id="menu">
-      <aside>
-        <div id="profile">
-          <div id="profilePicture">
-            <img src="./assets/images/user-photo.svg" alt="foto do usuário">
-          </div>
 
-          <div id="socialMediasContainer">
-            <ul class="social-medias">
-              <li class="social-media">
-                <img src="./assets/images/instagram.svg" alt="instagram">
-              </li>
-              
+<body>
+  <section id="menu">
+    <aside>
+      <div id="profile">
+        <div id="profilePicture">
+          <img src="./assets/images/user-photo.svg" alt="foto do usuário">
+        </div>
+
+        <div id="socialMediasContainer">
+          <ul class="social-medias">
+            <li class="social-media">
+              <img src="./assets/images/instagram.svg" alt="instagram">
+            </li>
+
             <ul class="social-medias">
               <li class="social-media">
                 <img src="./assets/images/twitter.svg" alt="twitter">
               </li>
 
-            <ul class="social-medias">
-              <li class="social-media">
-                <img src="./assets/images/facebook.svg" alt="facebook">
-              </li>
-            </ul>
-          </div>
+              <ul class="social-medias">
+                <li class="social-media">
+                  <img src="./assets/images/facebook.svg" alt="facebook">
+                </li>
+              </ul>
         </div>
+      </div>
 
-        <div class="search-container">
-          <button id="search">
-            <img src="./assets/images/search.svg" alt="busque aqui">
-          </button>
-        </div>
-      </aside>
+      <div class="search-container">
+        <button id="search">
+          <img src="./assets/images/search.svg" alt="busque aqui">
+        </button>
+      </div>
+    </aside>
   </section>
 
   <section id="mainContent">
-      <header id="mainHeader">
-        <a href="#" id="index">
-          <img src="./assets/images/marvel-logo.svg" alt="">
-        </a>
+    <header id="mainHeader">
+      <a href="#" id="index">
+        <img src="./assets/images/marvel-logo.svg" alt="">
+      </a>
 
-        <a href="#" id="spiderLogo">
-          <img src="./assets/images/spiderman-logo.svg" alt="">
-        </a>
+      <a href="#" id="spiderLogo">
+        <img src="./assets/images/spiderman-logo.svg" alt="">
+      </a>
 
-        <nav>
-          <ul id="navLinks">
-            <li class="nav-link">
-              <a href="#"> HOME</a>
-            </li>
-            
-            <li class="nav-link">
-              <a href="#"> SINOPSE </a>
-            </li>
+      <nav>
+        <ul id="navLinks">
+          <li class="nav-link">
+            <a href="#"> HOME</a>
+          </li>
 
-            <li class="nav-link">
-              <a href="#"> ELENCO </a>
-            </li>
-          </ul>
+          <li class="nav-link">
+            <a href="#"> SINOPSE </a>
+          </li>
 
-          <button id="mobileMenu">
-            <img src="./assets/images/mobile/mobile-menu.svg" alt="menu">
-          </button>
-        </nav>
-      </header>
+          <li class="nav-link">
+            <a href="#"> ELENCO </a>
+          </li>
+        </ul>
 
-      <main>
-        <section id="spidermanMilesMorales">
-          <img src="./assets/images/spiderman-miles-morales.svg" alt="spiderman Miles Morales">
+        <button id="mobileMenu">
+          <img src="./assets/images/mobile/mobile-menu.svg" alt="menu">
+        </button>
+      </nav>
+    </header>
 
-          <button id="watchTrailer"> 
+    <main>
+      <section id="spidermanMilesMorales">
+        <img src="./assets/images/spiderman-miles-morales.svg" alt="spiderman Miles Morales">
+
+        <button id="watchTrailer">
           <p>ASSISTA AO TRAILER</p>
-          <img src="./assets/images/play.svg" alt="">  
-          </button>
-        </section>
-      </main>
-  </section>
-  
-  <section id="loginContainer">
-    <form action="" id="loginInfo">
-      <h2>ENTRAR</h2>
-
-      <div class="user-login-info">
-        <label for="userMail">Email</label>
-        <input type="email" name="userMail" id="userMail" placeholder="seu Email" />
-
-        <label for="userPassword">senha</label>
-        <input type="password" name="pass" id="userPassword" placeholder="senha">
-
-        <button id="login"> Entrar </button>
-      </div>
-
-      <h2 class='titulo-criar-conta'>Não possui conta?</h2>
-
-      <p>
-        Você pode criar uma conta clicando <a href="#">aqui.</a>
-      </p>
-    </form>
+          <img src="./assets/images/play.svg" alt="">
+        </button>
+      </section>
+    </main>
   </section>
 
   <script src="./main.js" type="module"></script>
 
 </body>
+
 </html>
